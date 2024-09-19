@@ -14,7 +14,7 @@ jobs:
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: nuget restore .
+      run: nuget restore .\aehd\aehd.sln
 
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
